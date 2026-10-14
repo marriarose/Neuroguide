@@ -1,0 +1,16 @@
+# NeuroGuide Label Mapping File Template
+#
+# This file maps MATLAB dataset files and variable names (or window indices) to verified emotion labels.
+# Allowed emotion labels: negative, neutral, positive (or -1, 0, 1 / 0, 1, 2).
+#
+# Columns:
+#   source_file  : Name of the MATLAB file in data/raw/ (e.g. 1.mat)
+#   variable_name: Name of the variable inside the MAT file (e.g. de_LDS_1)
+#   label        : Verified emotion class (negative, neutral, positive)
+#   subject_id   : (Optional) Subject identifier for grouped train/test splitting (e.g. subject_1)
+#   session_id   : (Optional) Session identifier (e.g. session_1)
+#
+source_file,variable_name,label,subject_id,session_id
+1.mat,de_LDS_1,negative,subject_1,session_1
+1.mat,de_LDS_2,neutral,subject_1,session_1
+1.mat,de_LDS_3,positive,subject_1,session_1
